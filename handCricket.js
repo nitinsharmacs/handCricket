@@ -56,7 +56,7 @@ const createMatch = function (players) {
 const startMatch = function (players) {
   const match = createMatch(players);
   for (let index = 0; index < players.length; index++) {
-    let inning = playInning();
+    const inning = playInning();
     updateBatsMan(match, inning);
     swapPlayers(match);
   }
