@@ -4,13 +4,7 @@ const winner = function (match) {
   if (batsMan.runs > bowler.runs) {
     return batsMan;
   }
-  if (batsMan.runs < bowler.runs) {
-    return bowler;
-  }
-  if (batsMan.balls > bowler.balls) {
-    return bowler;
-  }
-  return batsMan;
+  return bowler;
 };
 
 const shakeHand = function () {
